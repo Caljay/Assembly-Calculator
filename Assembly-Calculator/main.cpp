@@ -51,10 +51,6 @@ void calculation(void) {
 	std::cin.get();
 }
 
-
-
-
-
 int main(void) {
 
 	welcome();
@@ -67,7 +63,6 @@ int main(void) {
 
 	start(0, 0,0);
 	std::cin.get();
-
 
 	return 0;
 }
