@@ -24,23 +24,25 @@ mov r8d, opAdd
 mov r9d, opSub
 mov r10d, opMulti
 mov r11d, opDiv
-
+;clears eax reg
 xor eax, eax
 
-
-cmp edx, r8d
+;following all checks which operation and jumps
+;to that operation if is equal
+;if not euqal continues on
+cmp edx, opAdd
 je AddNums
 
-cmp edx, r9d
+cmp edx, opSub
 je SubNums
 
-cmp edx, r10d
+cmp edx, opMulti
 je MultiNum
 
-cmp edx, r11d
+cmp edx, opDiv
 je DivNums
 
-
+     
 jmp Continue
 
 AddNums:
