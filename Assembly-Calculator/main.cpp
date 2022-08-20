@@ -18,11 +18,6 @@ void calculation(void) {
 	int finalOp;
 	std::cin >> inputOperations;
 
-
-	//0 - Add
-	//1 - Sub
-	//2 - Multi
-	//3 Divide
 	switch (inputOperations)
 	{
 	case '+':
